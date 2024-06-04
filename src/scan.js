@@ -206,4 +206,19 @@ async function safeExecution() {
     }
 }
 
+async function safeExecution() {
+    try {
+      runTask()
+        .then(() => {
+          console.log("All tasks completed");
+        })
+        .catch((error) => {
+          console.error("All tasks failed", error);
+        });
+    } catch (error) {
+      console.log("waiting 10 minutes before retrying");
+      setTimeout(safeExecution, 300000);
+    }
+}
+
 safeExecution()
