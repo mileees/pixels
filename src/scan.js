@@ -207,7 +207,3 @@ async function safeExecution() {
 }
 
 safeExecution()
-
-setInterval(() => {
-    safeExecution()
-}, 30 * 60 * 1000)
