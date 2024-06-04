@@ -1,0 +1,17 @@
+{
+  "name": "bot-pixels-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scan": "node src/scan.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^8.3.2",
+    "node-fetch": "^3.3.2",
+    "ws": "^8.17.0"
+  }
+}
